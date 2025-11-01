@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkyUnit — تحليل سوق العقارات المصري 2025</title>
+  <meta name="description" content="SkyUnit — تحليل عقارات وزارة الإسكان، ترشيح وحدات، حساب الأوفر برايس، توصيات ذكية." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="logo">SkyUnit AI</div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">الرئيسية</a>
+        <a href="projects.html" class="nav-link">المشاريع</a>
+        <a href="map.html" class="nav-link">الخريطة</a>
+        <a href="calculator.html" class="nav-link">حاسبة التمويل</a>
+        <a href="about.html" class="nav-link">من نحن</a>
+        <a href="contact.html" class="nav-link">تواصل</a>
+        <a href="login.html" class="nav-link btn-ghost">تسجيل دخول</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="report-header container">
+      <h1>تحليل SkyUnit 2025: سيناريوهات سوق العقارات المصري</h1>
+      <p>تحليل تفاعلي لفرص الاستثمار والنمو في مشروعات وزارة الإسكان، مدعوم بالذكاء الاصطناعي.</p>
+      
+      <div class="search-bar mt-20 card">
+        <h3>ابحث مباشرة في قاعدة البيانات التحليلية</h3>
+        <div class="row">
+          <input id="search-city" placeholder="المدينة (مثال: 6 أكتوبر، القاهرة)" />
+          <input id="search-budget" placeholder="الميزانية التقريبية (ج.م)" />
+          <select id="search-type"><option value="">نوع الوحدة</option><option value="شقة">شقة</option><option value="فيلا">فيلا</option></select>
+          <button id="btn-search" class="btn-primary">ابحث</button>
+        </div>
+        <div id="search-results" class="mt-4"></div>
+      </div>
+    </section>
+
+    <section class="report-section container">
+      <h2>الملحق أ - مؤشرات السوق الرئيسية</h2>
+      <div class="stats-grid">
+        <div class="stat-item card">
+          <strong id="stat-bookings">0</strong>
+          <small>تحليل حجز ناجح</small>
+        </div>
+        <div class="stat-item card">
+          <strong id="stat-clients">0</strong>
+          <small>عميل موثوق</small>
+        </div>
+        <div class="stat-item card">
+          <strong id="stat-speed">0</strong>
+          <small>متوسط سرعة التنفيذ (ثانية)</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section container">
+      <h2>الملحق ب - أبرز المشاريع الاستثمارية</h2>
+      <div class="md-grid">
+        <div class="spotlight-card card">
+          <div class="spotlight-image" style="background-image:url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60')"></div>
+          <h4>مشروع جنة أكتوبر</h4>
+          <p>يعتبر من المشاريع الواعدة في مدينة 6 أكتوبر، يتميز بتصميماته العصرية وموقعه الاستراتيجي.</p>
+          <div class="tags">
+            <span class="tag">نمو مرتفع</span>
+            <span class="tag">طلب عالي</span>
+            <span class="tag">وحدات مميزة</span>
+          </div>
+          <a href="projects.html" class="btn-primary-sm mt-4">عرض التحليل الكامل</a>
+        </div>
+        <div class="spotlight-card card">
+          <div class="spotlight-image" style="background-image:url('https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=800&q=60')"></div>
+          <h4>سكن مصر - القاهرة الجديدة</h4>
+          <p>فرصة استثمارية في قلب القاهرة الجديدة، مع بنية تحتية متكاملة وخدمات عالية المستوى.</p>
+          <div class="tags">
+            <span class="tag">موقع استراتيجي</span>
+            <span class="tag">عوائد متوقعة</span>
+          </div>
+          <a href="projects.html" class="btn-primary-sm mt-4">عرض التحليل الكامل</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="report-section container">
+      <h2>الملحق ج - اقتصاد الوحدات العقارية</h2>
+      <div class="card">
+        <p>نحن ننظر إلى سوق العقارات كاقتصاد حيوي مكون من وحدات مستقلة. خوارزمياتنا تحلل "جينات" كل وحدة (الموقع، المساحة، السعر) لتوقع مسار نموها وقيمتها المستقبلية، تماماً كما يتم تحليل نمو الاقتصادات الناشئة.</p>
+        <div class="chart-container mt-4">
+          <h5>مقارنة نمو القيمة (5 سنوات)</h5>
+          <div class="chart">
+            <div class="chart-bar" style="height: 85%;"><small>عقارات مميزة</small></div>
+            <div class="chart-bar" style="height: 60%;"><small>متوسط السوق</small></div>
+            <div class="chart-bar" style="height: 40%;"><small>أصول أخرى</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-assistant container report-section">
+      <h2>الملحق د - مساعد التحليل الذكي</h2>
+      <div class="assistant">
+        <div class="assistant-left">
+          <div class="messages" id="assistant-messages">
+             <div class="message assistant-message">مرحباً! أنا مساعد SkyUnit. كيف يمكنني مساعدتك في تحليل بيانات السوق أو العثور على وحدتك المثالية؟</div>
+          </div>
+          <form id="assistant-form" class="assistant-form">
+            <input id="assistant-input" placeholder="مثال: ما هو متوسط الأوفر برايس في القاهرة الجديدة؟" autocomplete="off"/>
+            <button class="btn-primary" type="submit">إرسال</button>
+          </form>
+        </div>
+        <div class="assistant-right card">
+          <h4>لماذا المساعد فريد؟</h4>
+          <p>مساعد متخصص في عقارات وزارة الإسكان المصرية، مدعوم ببيانات تاريخية وقانونية وسوقية، ويعمل بالعربية فقط لتقديم إجابات دقيقة محلية.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 SkyUnit AI — Powered by the Future of AI</div>
+      <div class="small">تواصل: 01114314785 • 01114314786 — <a href="https://web.facebook.com/Skyunitai" target="_blank">صفحتنا على فيسبوك</a></div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

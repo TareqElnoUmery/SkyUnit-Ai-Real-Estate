@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>حاسبة التمويل — SkyUnit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="logo">SkyUnit AI</div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="projects.html" class="nav-link">المشاريع</a>
+        <a href="map.html" class="nav-link">الخريطة</a>
+        <a href="calculator.html" class="nav-link active">حاسبة التمويل</a>
+        <a href="about.html" class="nav-link">من نحن</a>
+        <a href="contact.html" class="nav-link">تواصل</a>
+        <a href="login.html" class="nav-link btn-ghost">تسجيل دخول</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <section class="card">
+      <h1>حاسبة سعر الوحدة والأقساط</h1>
+      <p class="text-light">أدخل تفاصيل الوحدة لحساب خطة التمويل المقترحة والقسط الشهري.</p>
+      <form id="calc-form" class="form-grid mt-6">
+        <label>سعر الوحدة (ج.م)
+            <input type="number" id="calc-price" value="1200000" step="1000" />
+        </label>
+        <label>المقدم (%) 
+            <input type="number" id="calc-down" value="20" min="0" max="100"/>
+        </label>
+        <label>مدة القسط (سنوات) 
+            <input type="number" id="calc-years" value="10" min="1" />
+        </label>
+        <label>الفائدة السنوية (%) 
+            <input type="number" id="calc-rate" value="8" step="0.1" min="0"/>
+        </label>
+        <div class="full">
+            <button class="btn-primary" id="btn-calc" type="button" style="width: 100%;">احسب</button>
+        </div>
+      </form>
+      <div id="calc-result"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 SkyUnit AI — Powered by the Future of AI</div>
+      <div class="small">تواصل: 01114314785 • 01114314786 — <a href="https://web.facebook.com/Skyunitai" target="_blank">صفحتنا على فيسبوك</a></div>
+    </div>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>

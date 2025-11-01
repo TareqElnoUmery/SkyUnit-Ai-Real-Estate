@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of SkyUnit AI - Real Estate Analysis",
+  "description": "An AI-powered platform for analyzing, searching, and discovering real estate properties from the Egyptian Ministry of Housing. Features an intelligent assistant for smart recommendations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

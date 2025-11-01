@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الخريطة التفاعلية — SkyUnit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="logo">SkyUnit AI</div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="projects.html" class="nav-link">المشاريع</a>
+        <a href="map.html" class="nav-link active">الخريطة</a>
+        <a href="calculator.html" class="nav-link">حاسبة التمويل</a>
+        <a href="about.html" class="nav-link">من نحن</a>
+        <a href="contact.html" class="nav-link">تواصل</a>
+        <a href="login.html" class="nav-link btn-ghost">تسجيل دخول</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <section class="card">
+      <h1>الخريطة التفاعلية للمشاريع</h1>
+      <p class="text-light">استكشف مواقع المشاريع والوحدات المتاحة بالقرب منك. سيتم طلب إذن للوصول إلى موقعك الحالي.</p>
+      <div id="map-container">
+        <!-- Map placeholder will be updated by JS -->
+      </div>
+      <div id="geo-status">
+        <!-- Geolocation status will be updated by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 SkyUnit AI — Powered by the Future of AI</div>
+      <div class="small">تواصل: 01114314785 • 01114314786 — <a href="https://web.facebook.com/Skyunitai" target="_blank">صفحتنا على فيسبوك</a></div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

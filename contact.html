@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>تواصل معنا — SkyUnit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="logo">SkyUnit AI</div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="projects.html" class="nav-link">المشاريع</a>
+        <a href="map.html" class="nav-link">الخريطة</a>
+        <a href="calculator.html" class="nav-link">حاسبة التمويل</a>
+        <a href="about.html" class="nav-link">من نحن</a>
+        <a href="contact.html" class="nav-link active">تواصل</a>
+        <a href="login.html" class="nav-link btn-ghost">تسجيل دخول</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <section class="card" style="max-width: 800px; margin: 0 auto;">
+      <h1>تواصل معنا</h1>
+      <p class="text-light">للمزيد من المعلومات أو لطلب عرض توضيحي، املأ النموذج أدناه أو تواصل معنا مباشرة عبر الأرقام الموضحة أسفل الصفحة.</p>
+      <form id="contact-form" class="form-grid mt-6">
+        <label>الاسم بالكامل<input type="text" id="contact-name" required /></label>
+        <label>رقم الهاتف<input type="tel" id="contact-phone" required /></label>
+        <label class="full">رسالتك (اختياري)<textarea id="contact-msg" placeholder="اكتب استفسارك هنا..."></textarea></label>
+        <div class="full">
+            <button class="btn-primary" id="contact-send" type="button" style="width: 100%;">إرسال</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 SkyUnit AI — Powered by the Future of AI</div>
+      <div class="small">تواصل: 01114314785 • 01114314786 — <a href="https://web.facebook.com/Skyunitai" target="_blank">صفحتنا على فيسبوك</a></div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
