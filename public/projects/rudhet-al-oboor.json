@@ -1,0 +1,34 @@
+{
+  "id": "rudhet-al-oboor",
+  "nameAr": "مشروع روضة العبور",
+  "nameEn": "Rudhet Al-Oboor Project",
+  "location": {
+    "city": "القاهرة",
+    "area": "العبور"
+  },
+  "price": {
+    "pricePerSqm": 12200,
+    "totalPrice": 1244400,
+    "currency": "EGP",
+    "priceRange": "1,244,400 ج.م"
+  },
+  "units": {
+    "totalUnits": 100,
+    "areaRange": "102 - 111 متر مربع",
+    "minArea": 102,
+    "maxArea": 111
+  },
+  "rooms": {
+    "bedrooms": 3,
+    "bathrooms": 1
+  },
+  "booking": {
+    "depositAmount": 150000,
+    "openingDate": "2025-11-16",
+    "status": "متاح للحجز"
+  },
+  "projectType": "إسكان حكومي",
+  "description": "مشروع روضة العبور يوفر وحدات سكنية حديثة بأسعار مناسبة، يقع في منطقة استراتيجية بالقاهرة الجديدة.",
+  "images": [],
+  "amenities": ["مناطق خضراء", "حديقة", "ملعب", "مركز تجاري"]
+}
