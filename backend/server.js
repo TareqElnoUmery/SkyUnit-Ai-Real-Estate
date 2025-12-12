@@ -43,6 +43,25 @@ app.post('/api/contact', (req, res) => {
 });
 
 
+// Projects API
+app.get('/projects', (req, res) => {
+  const fs = require('fs');
+  const path = require('path');
+  const projectsDir = path.join(__dirname, '../public/projects');
+  try {
+    const files = fs.readdirSync(projectsDir).filter(f => f.endsWith('.json'));
+    const projects = files.map(file => {
+      const filePath = path.join(projectsDir, file);
+      const content = fs.readFileSync(filePath, 'utf8');
+      return JSON.parse(content);
+    });
+    res.json(projects);
+  } catch (error) {
+    console.error('Error reading projects:', error);
+    res.status(500).json({ error: 'Failed to load projects' });
+  }
+});
+
 // Start server
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
