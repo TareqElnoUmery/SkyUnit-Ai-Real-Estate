@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - عقاري ذكي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .error {
+            color: #e74c3c;
+            background: #fadbd8;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .success {
+            color: #27ae60;
+            background: #d5f4e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .packages {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .packages h3 {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .package-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .package-option input {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .package-option label {
+            margin: 0;
+            font-weight: normal;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>عقاري ذكي</h1>
+            <p>إنشاء حساب جديد</p>
+        </div>
+
+        <div id="error" class="error"></div>
+        <div id="success" class="success"></div>
+
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">الاسم الكامل</label>
+                <input type="text" id="name" placeholder="أدخل اسمك الكامل" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">تأكيد كلمة المرور</label>
+                <input type="password" id="confirmPassword" placeholder="أكد كلمة المرور" required>
+            </div>
+
+            <div class="packages">
+                <h3>اختر الباقة المناسبة:</h3>
+                
+                <div class="package-option">
+                    <input type="radio" id="bronze" name="package" value="bronze" required>
+                    <label for="bronze">الباقة البرونزية - 20,000 ريال</label>
+                </div>
+
+                <div class="package-option">
+                    <input type="radio" id="silver" name="package" value="silver">
+                    <label for="silver">الباقة الفضية - 30,000 ريال</label>
+                </div>
+
+                <div class="package-option">
+                    <input type="radio" id="gold" name="package" value="gold">
+                    <label for="gold">الباقة الذهبية - 50,000 ريال</label>
+                </div>
+            </div>
+
+            <button type="submit">إنشاء الحساب</button>
+        </form>
+
+        <div class="footer">
+            هل لديك حساب بالفعل؟ <a href="/pages/login.html">تسجيل الدخول</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const selectedPackage = document.querySelector('input[name="package"]:checked').value;
+            const errorDiv = document.getElementById('error');
+            const successDiv = document.getElementById('success');
+
+            // مسح الرسائل
+            errorDiv.style.display = 'none';
+            successDiv.style.display = 'none';
+            errorDiv.textContent = '';
+            successDiv.textContent = '';
+
+            // التحقق من البيانات
+            if (!name || !email || !password || !confirmPassword) {
+                errorDiv.textContent = 'يرجى ملء جميع الحقول';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                errorDiv.textContent = 'كلمات المرور غير متطابقة';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            if (password.length < 6) {
+                errorDiv.textContent = 'يجب أن تكون كلمة المرور 6 أحرف على الأقل';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            // التحقق من عدم تكرار البريد الإلكتروني
+            const users = JSON.parse(localStorage.getItem('users') || '{}');
+            if (users[email]) {
+                errorDiv.textContent = 'هذا البريد الإلكتروني مسجل بالفعل';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            // حفظ المستخدم الجديد
+            users[email] = {
+                name: name,
+                password: password,
+                package: selectedPackage,
+                createdAt: new Date().toISOString()
+            };
+
+            localStorage.setItem('users', JSON.stringify(users));
+
+            // رسالة نجاح
+            successDiv.textContent = 'تم إنشاء الحساب بنجاح! سيتم إعادة التوجيه إلى صفحة تسجيل الدخول...';
+            successDiv.style.display = 'block';
+
+            // إعادة التوجيه بعد ثانيتين
+            setTimeout(function() {
+                window.location.href = '/pages/login.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
