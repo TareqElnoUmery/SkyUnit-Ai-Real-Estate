@@ -1,3 +1,25 @@
+:root {
+  /* SkyUnit Brand Colors - based on VISUAL_IDENTITY_GUIDE */
+  --color-dark-blue: #0A3F5E;      /* Dark Navy for depth */
+  --color-primary-blue: #0B5BA8;    /* Primary brand blue */
+  --color-medium-blue: #1E7DB8;     /* Medium blue */
+  --color-light-blue: #2B9FD9;      /* Light blue accent */
+  --color-sky-blue: #4DBFE8;        /* Sky blue for highlights */
+  --color-white: #FFFFFF;           /* Pure white for text */
+  --color-off-white: #F8FAFB;       /* Off-white for body text */
+  
+  /* Gradients */
+  --gradient-main: linear-gradient(180deg, #0A3F5E 0%, #0B5BA8 40%, #2B9FD9 100%);
+  --gradient-accent: linear-gradient(90deg, #1E7DB8, #4DBFE8);
+  --gradient-hero: linear-gradient(135deg, #0A3F5E 0%, #0B5BA8 50%, #2B9FD9 100%);
+  
+  /* Shadows & Glows */
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-heavy: 0 8px 32px rgba(43, 159, 217, 0.3);
+  --glow-blue: 0 0 20px rgba(77, 191, 232, 0.4);
+}
+
 /* styles.css — تصميم مركزي */
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
