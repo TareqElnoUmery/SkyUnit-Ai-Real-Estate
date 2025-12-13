@@ -62,6 +62,7 @@ app.get('/projects', (req, res) => {
   }
 });
 
+
 // Start server
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
